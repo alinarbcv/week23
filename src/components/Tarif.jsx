@@ -8,6 +8,9 @@ function Tarif(props){
         <div className="text">
         {props.text}
         </div>
+        <div >
+             <button className="button">{props.button}</button>
+        </div>
      </div>
     );
 }

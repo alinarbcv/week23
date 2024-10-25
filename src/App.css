@@ -43,6 +43,9 @@
   width : 300px;
   border: solid 1px black;
   padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(225, 7, 163, 0.2);
+  transition: all 0.3s ease;
 }
 .tarif:hover {
   transform:scale(1.1);
@@ -50,23 +53,45 @@
 .ListOfCard{
   display:flex;
   justify-content: space-between;
-  padding: 20px;
+  padding: 50px;
+  
 }
 .speed{
-  background-color:#61dafb;
+  background-color:#664545;
   padding: 15px;
   margin-bottom: 50px;
+  border: solid 1px black;
+  font-family: 'Poppins', sans-serif; 
+}
+
+.text{
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif; 
 }
 .card1{
-  background-color:blue;
-
+  background-color:rgb(171, 171, 228);
+  
 }
 .card2{
-  background-color:red;
+  background-color:rgb(206, 90, 90);
+}
+.card3{
+  background-color:rgb(130, 130, 132);
 }
 .card1 .speed{
-  background-color:pink;
+  background-color:rgb(219, 121, 239);
 }
 .card2 .speed{
-  background-color:white;
+  background-color:rgb(220, 219, 217);
+}
+.button {
+  background: linear-gradient(135deg, #7a747e, #010101);
+  border-radius: 8px;
+  color: #fff;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(225, 7, 163, 0.2);
+  transition: all 0.3s ease;
 }
