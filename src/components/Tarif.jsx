@@ -1,6 +1,12 @@
+import { useState } from "react";
+
 function Tarif(props){
+    const [selected, setSelected]= useState(false);
+    const handleSelected = () =>{
+        setSelected(!selected)
+    }
     return(
-     <div className={" tarif "+ props.class}>
+     <div className={`tarif ${props.class} ${selected ? "selected" : ""}`} >
         <h2>Безлимитный {props.name} </h2>
         <div className="speed">
             {props.speed} 
@@ -9,7 +15,7 @@ function Tarif(props){
         {props.text}
         </div>
         <div >
-             <button className="button">{props.button}</button>
+             <button className="button" onClick={handleSelected}>{props.button}</button>
         </div>
      </div>
     );
